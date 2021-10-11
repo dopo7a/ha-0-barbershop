@@ -14,7 +14,7 @@
   <header class="header">
     <nav class="navigation">
       <ul class="site-navigation">
-        <li class="visually-hidden item-logo">
+        <li class="visually-hidden item-logo site-navigation--active">
           <a><img src="Img/logo.svg" alt="Малый Логотип Бородинского" width="111" height="24"></a>
         </li>
         <li><a href="info.html">Информация</a></li>
@@ -72,7 +72,8 @@
     <section class="gallary">
       <h2>Фотогалерея</h2>
       <figure>
-        <a href="Img/interior.jpg"><img src="Img/interior-small.jpg" alt="Интерьер барбершопа Бородинский" width="" height=""></a>
+        <a href="#modal-gallary-fig">
+          <img src="Img/fig-small.jpg" alt="Миниатюра галереи" width="200" height="150"></a>
       </figure>
       <button>Назад</button>
       <button>Вперёд</button>
@@ -96,7 +97,7 @@
     <section class="appointment">
       <h2>Записаться</h2>
       <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-      <form action="">
+      <form>
         <label>Дата
           <input type="date">
         </label>
@@ -153,6 +154,13 @@
     <h2 class="visually-hidden">Как нас найти</h2>
     <!-- the map -->
     <span class="modal-close">[x]</span>
+  </section>
+  <section id="modal-gallary-fig">
+    <h2>Полная картинка галереи</h2>
+    <p>
+      <img src="Img/fig.jpg" alt="Полная картинка галереи">
+    </p>
+    <span class="close">[x]</span>
   </section>
 
   <!-- <script src="script.js"></script> -->

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="ru-ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Css/index.css">
+
+  <title>Барбершоп «Бородинский»</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navigation">
+      <ul class="site-navigation">
+        <li class="item-logo">
+          <a href="index.html"><img src="Img/logo.svg" alt="Малый Логотип Бородинского" width="111" height="24"></a>
+        </li>
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="price.html">Прайс-лист</a></li>
+        <li class="site-navigation--current"><a href="shop.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li class="login-item">
+          <a href="#modal-login">Вход</a>
+          <ul class="user-navigation"></ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Набор для путешествий «Baxter of California»</h1>
+    <nav class="breadcrumbs">
+      <a class="breadcrumbs-item" href="index.html">Главная</a>
+      <a class="breadcrumbs-item" href="shop.html">Магазин</a>
+      <a class="breadcrumbs-item" href="shop.html">Средства для ухода</a>
+      <a class="breadcrumbs--active">Набор для путешествий «Baxter of California»</a>
+    </nav>
+
+    <section class="product-images">
+      <h2 class="visually-hidden">Изображения товара</h2>
+      <figure class="product-figure">
+        <figcaption class="visually-hidden">Увеличенное изображение товара</figcaption>
+        <img class="product-image" src="Img/product1-1.jpg" alt="Набор для путешествий «Baxter of California»">
+      </figure>
+      <ul class="product-thumbs-list">
+        <li class="product-thumbs-item">
+          <img class="product-thumb" src="product1-1-small.jpg" alt="Набор для путешествий «Baxter of California» - миниатюра">
+        </li>
+        <li class="product-thumbs-item">
+          <img class="product-thumb" src="product1-2-small.jpg" alt="Набор для путешествий «Baxter of California» - миниатюра">
+        </li>
+        <li class="product-thumbs-item">
+          <img class="product-thumb" src="product1-3-small.jpg" alt="Набор для путешествий «Baxter of California» - миниатюра">
+        </li>
+      </ul>
+    </section>
+
+    <section class="product-info">
+      <h2 class="visually-hidden">Информация о продукте</h2>
+      <p>
+        <span class="availability">Есть в наличии</span>
+        <span class="product-code">Артикул: dexter-ae</span>
+      </p>
+      <p class="product-description">
+        Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
+      </p>
+      <p class="product-cost_buy">
+        <b class="product-cost">2 900 ₽</b>
+        <button product-buy>Купить</button>
+      </p>
+      <h3>В набор входят:</h3>
+      <ul class="product-suite_list">
+        <li class="product-suite_item">Средство для умывания (50 мл)</li>
+        <li class="product-suite_item">Увлажняющий крем (50 мл)</li>
+        <li class="product-suite_item">Крем для бритья (50 мл)</li>
+        <li class="product-suite_item">Крем после бритья, шампунь (50 мл)</li>
+        <li class="product-suite_item">Удобная кожаная косметичка</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-contacts">
+      <p>
+        Барбершоп "Бородинский"<br>
+        Адрес: г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
+        <a href="map.html">Как нас найти</a><br>
+        Телефон: +7 (495) 666-02-66
+      </p>
+    </div>
+    <div class="footer-socials">
+      <p>Давайте дружить!</p>
+      <ul>
+        <li>
+          <a class="button vkontakte" href="http://vk.com" target="_blank" rel="noopener noreferrer">Вконтакте</a>
+        </li>
+        <li>
+          <a class="button facebook" href="http://facebook.com" target="_blank" rel="noopener noreferrer">Фэйсбук</a>
+        </li>
+        <li>
+          <a class="button instagram" href="http://instagram.com" target="_blank" rel="noopener noreferrer">Инстаграм</a>
+        </li>
+      </ul>
+    </div>
+    <div class="developer">
+      <p>Разработано:</p>
+      <a class="button" href="http://htmlacademy.ru" target="_blank" rel="noopener noreferrer">HTML Academy</a>
+    </div>
+  </footer>
+
+  <section id="modal-login">
+    <h2>Личный кабинет</h2>
+    <p>Введите пожалуйста свой логин и пароль</p>
+    <!-- форма для входа -->
+    <span class="modal-close">[x]</span>
+  </section>
+  <section id="modal-map">
+    <h2 class="visually-hidden">Как нас найти</h2>
+    <!-- the map -->
+    <span class="modal-close">[x]</span>
+  </section>
+
+  <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
