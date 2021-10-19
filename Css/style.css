@@ -1,0 +1,9 @@
+.item-logo,
+.main-logo {
+  background-color: black;
+}
+
+x[hidden] {
+  display: block;
+  border: 2px solid red;
+}
