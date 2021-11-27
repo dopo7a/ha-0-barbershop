@@ -1,9 +1,25 @@
-.item-logo,
+.site-menu__logo,
 .main-logo {
   background-color: black;
 }
 
-x[hidden] {
+[hidden] {
   display: block;
-  border: 2px solid red;
+  border: 2px dotted red;
+}
+
+X.visually-hidden {
+   position: absolute;
+   
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+.visually-hidden {
+  border: 2px dashed red;
 }

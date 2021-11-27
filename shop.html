@@ -7,24 +7,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Css/style.css">
 
-  <title>Барбершоп «Бородинский»</title>
+  <title>Барбершоп «Бородинский» - магазин</title>
 </head>
 
 <body>
-  <header class="header">
-    <nav class="navigation">
-      <ul class="site-navigation">
-        <li class="item-logo">
-          <a href="index.html"><img src="Img/logo.svg" alt="Малый Логотип Бородинского" width="111" height="24"></a>
+  <header class="body-header">
+    <nav class="body-header__nav">
+      <ul class="site-menu">
+        <li class="site-menu__logo">
+          <a href="index.html">
+            <img src="Img/logo.svg" alt="Малый логотип Бородинского" width="111" height="24">
+          </a>
         </li>
         <li><a href="info.html">Информация</a></li>
         <li><a href="news.html">Новости</a></li>
         <li><a href="price.html">Прайс-лист</a></li>
-        <li class="site-navigation--current"><a>Магазин</a></li>
+        <li class="site-menu__current">
+          <a>Магазин</a>
+        </li>
         <li><a href="contacts.html">Контакты</a></li>
-        <li class="login-item">
-          <a href="#modal-login">Вход</a>
-          <ul class="user-navigation" hidden></ul>
+        <li class="site-menu__login">
+          <a class="login-link" href="#modal-login">Вход</a>
+          <ul class="user-menu" hidden>
+            <li>Настройки</li>
+            <li>Личный кабинет</li>
+          </ul>
         </li>
       </ul>
     </nav>
@@ -32,65 +39,92 @@
 
   <main>
     <h1 class="visually-hidden">Магазин</h1>
-    <h2 class="radio-choiced">Средства для ухода</h2>
+    <h1 class="radio-choiced">Средства для ухода</h1>
+
     <nav class="breadcrumbs">
-      <h2 class="visually-hidden">Путь до этой страницы</h2>
-      <a class="breadcrumbs-item" href="index.html">Главная</a>
-      <a class="breadcrumbs-item" href="shop.html">Магазин</a>
-      <a class="breadcrumbs--active">Средства для ухода</a>
+      <!-- <h2 class="visually-hidden">Хлебные крошки - путь по эту страницу сайта</h2> -->
+      <ul>
+        <li><a class="breadcrumbs-item" href="index.html">Главная</a></li>
+        <li><a class="breadcrumbs-item" href="shop.html">Магазин</a></li>
+        <li><a class="breadcrumbs-current">Средства для ухода</a></li>
+      </ul>
     </nav>
 
     <section class="goods-filters">
       <h2 class="visually-hidden">Фильтры выбора товаров</h2>
-      <form action="">
+      <form action="https://echo.htmlacademy.ru" method="get">
         <section class="filter_vendors">
           <h3>Производители:</h3>
-          <label >
-            <input type="checkbox" checked>
-            Baxter of California
-          </label>
-          <label >
-            <input type="checkbox">
-            Mr Natty
-          </label>
-          <label >
-            <input type="checkbox" checked>
-            Suavecito
-          </label>
-          <label >
-            <input type="checkbox">
-            Malin+Goetz
-          </label>
-          <label >
-            <input type="checkbox">
-            Murray’s
-          </label>
-          <label >
-            <input type="checkbox" checked>
-            American Crew
-          </label>
+          <ul>
+            <li>
+              <label >
+                <input name="Baxter of California" class="visually-hidden" type="checkbox" checked>
+                Baxter of California
+              </label>
+            </li>
+            <li>
+              <label >
+                <input name="Mr Natty" class="visually-hidden" type="checkbox">
+                Mr Natty
+              </label>
+            </li>
+            <li>
+              <label >
+                <input name="Suavecito" class="visually-hidden" type="checkbox" checked>
+                Suavecito
+              </label>
+            </li>
+            <li>
+              <label >
+                <input name="Malin+Goetz" class="visually-hidden" type="checkbox">
+                Malin+Goetz
+              </label>
+            </li>
+            <li>
+              <label >
+                <input type="checkbox">
+                Murray’s
+              </label>
+            </li>
+            <li>
+              <label >
+                <input name="American Crew" class="visually-hidden" type="checkbox" checked>
+                American Crew
+              </label>
+            </li>
+          </ul>
         </section>
+
         <section class="filter_goods-groups">
           <h3>Группы товаров:</h3>
-          <label >
-            <input type="radio" name="goods-group">
-            Бритвенные принадлежности
-          </label>
-          <label >
-            <input type="radio" name="goods-group" checked>
-            Средства для ухода
-          </label>
-          <label >
-            <input type="radio" name="goods-group">
-            Аксессуары
-          </label>
+          <ul>
+            <li>
+              <label >
+                <input type="radio" name="goods-group" value="shave">
+                Бритвенные принадлежности
+              </label>
+            </li>
+            <li>
+              <label >
+                <input type="radio" name="goods-group" value="care" checked>
+                Средства для ухода
+              </label>
+            </li>
+            <li>
+              <label >
+                <input type="radio" name="goods-group" value="accessories">
+                Аксессуары
+              </label>
+            </li>
+          </ul>
         </section>
-        <button type="submit">Показать</button>
+
+        <input type="submit" value="Показать">
       </form>
     </section>
 
     <section class="goods-showcase">
-      <h2 class="visually-hidden">Витрина с товарами</h2>
+      <h2 class="visually-hidden">Список отфильтрованных товаров</h2>
       <ul class="goods-list">
         <li class="goods-item product">
           <a href="item.html">
@@ -173,10 +207,10 @@
       </ul>
 
       <ul class="pagination">
-        <li><a href="">1</a></li>
-        <li class="pagination--active"><a>2</a></li>
-        <li><a href="">3</a></li>
-        <li><a href="">4</a></li>
+        <li><a href="#">1</a></li>
+        <li class="pagination-current"><a>2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
       </ul>
     </section>
   </main>
@@ -186,7 +220,7 @@
       <p>
         Барбершоп "Бородинский"<br>
         Адрес: г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
-        <a href="map.html">Как нас найти</a><br>
+        <a href="#modal-map">Как нас найти</a><br>
         Телефон: +7 (495) 666-02-66
       </p>
     </div>
@@ -214,12 +248,38 @@
     <h2>Личный кабинет</h2>
     <p>Введите пожалуйста свой логин и пароль</p>
     <!-- форма для входа -->
-    <span class="modal-close">[x]</span>
+    <form action="" method="get">
+      <p>
+        <label class="visually-hidden" for="login">Логин</label>
+        <input type="text" name="login" id="login" placeholder="Логин">
+      </p>
+      <p>
+        <label class="visually-hidden" for="password">Пароль</label>
+        <input type="password" name="password" id="password" placeholder="Пароль">
+      </p>
+      <p>
+        <label for="">
+          <input class="visually-hidden" type="checkbox" name="remember" id="" checked>
+          <span class="checkbox-styled"></span>
+          Запомните меня
+        </label>
+        <a class="password-recovery" href="recovery.html">Я забыл пароль</a>
+      </p>
+      <input type="submit" value="Войти">
+      <!-- <button type="submit">Войти</button> -->
+    </form>
+
+    <!-- <span class="modal-close">[x]</span> -->
+    <input class="modal-close" type="button" value="Закрыть">
   </section>
+
   <section id="modal-map">
     <h2 class="visually-hidden">Как нас найти</h2>
-    <!-- the map -->
-    <span class="modal-close">[x]</span>
+    <p>
+      <img src="Pic/map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="766" height="560">
+    </p>
+    <input class="modal-close" type="button" value="Закрыть">
+    <!-- <span class="modal-close">[x]</span> -->
   </section>
 
   <!-- <script src="script.js"></script> -->

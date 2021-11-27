@@ -11,20 +11,29 @@
 </head>
 
 <body>
-  <header class="header">
-    <nav class="navigation">
-      <ul class="site-navigation">
-        <li class="item-logo">
-          <a href="index.html"><img src="Img/logo.svg" alt="Малый логотип Бородинского" width="111" height="24"></a>
+  <header class="body-header">
+    <nav class="body-header__nav">
+      <ul class="site-menu">
+        <li class="site-menu__logo">
+          <a href="index.html">
+            <img src="Img/logo.svg" alt="Малый логотип Бородинского" width="111" height="24">
+          </a>
         </li>
         <li><a href="info.html">Информация</a></li>
         <li><a href="news.html">Новости</a></li>
-        <li class="site-navigation--current"><a>Прайс-лист</a></li>
-        <li><a href="shop.html">Магазин</a></li>
+        <li class="site-menu__current">
+          <a>Прайс-лист</a>
+        </li>
+        <li>
+          <a href="shop.html">Магазин</a>
+        </li>
         <li><a href="contacts.html">Контакты</a></li>
-        <li class="login-item">
-          <a href="#modal-login">Вход</a>
-          <ul class="user-navigation" hidden></ul>
+        <li class="site-menu__login">
+          <a class="login-link" href="#modal-login">Вход</a>
+          <ul class="user-menu" hidden>
+            <li>Настройки</li>
+            <li>Личный кабинет</li>
+          </ul>
         </li>
       </ul>
     </nav>
@@ -33,9 +42,13 @@
   <main>
     <h1>Прайс-лист</h1>
     <nav class="breadcrumbs">
-      <h2 class="visually-hidden">Путь до этой страницы</h2>
-      <a class="breadcrumbs-item" href="index.html">Главная</a>
-      <a class="breadcrumbs--active">Прайс-лист</a>
+      <!-- <h2 class="visually-hidden">Хлебные крошки - путь по эту страницу сайта</h2> -->
+      <ul>
+        <li><a class="breadcrumbs-item" href="index.html">Главная</a></li>
+        <li class="breadcrumbs-current">
+          <a class="breadcrumbs-item">Прайс-лист</a>
+        </li>
+      </ul>
     </nav>
 
     <p class="price-slogan">- Истинно мужская классика -</p>
@@ -79,7 +92,7 @@
       <p>
         Барбершоп "Бородинский"<br>
         Адрес: г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
-        <a href="map.html">Как нас найти</a><br>
+        <a href="#modal-map">Как нас найти</a><br>
         Телефон: +7 (495) 666-02-66
       </p>
     </div>
@@ -107,7 +120,38 @@
     <h2>Личный кабинет</h2>
     <p>Введите пожалуйста свой логин и пароль</p>
     <!-- форма для входа -->
-    <span class="modal-close">[x]</span>
+    <form action="" method="get">
+      <p>
+        <label class="visually-hidden" for="login">Логин</label>
+        <input type="text" name="login" id="login" placeholder="Логин">
+      </p>
+      <p>
+        <label class="visually-hidden" for="password">Пароль</label>
+        <input type="password" name="password" id="password" placeholder="Пароль">
+      </p>
+      <p>
+        <label for="">
+          <input class="visually-hidden" type="checkbox" name="remember" id="" checked>
+          <span class="checkbox-styled"></span>
+          Запомните меня
+        </label>
+        <a class="password-recovery" href="recovery.html">Я забыл пароль</a>
+      </p>
+      <input type="submit" value="Войти">
+      <!-- <button type="submit">Войти</button> -->
+    </form>
+
+    <!-- <span class="modal-close">[x]</span> -->
+    <input class="modal-close" type="button" value="Закрыть">
+  </section>
+
+  <section id="modal-map">
+    <h2 class="visually-hidden">Как нас найти</h2>
+    <p>
+      <img src="Pic/map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="766" height="560">
+    </p>
+    <input class="modal-close" type="button" value="Закрыть">
+    <!-- <span class="modal-close">[x]</span> -->
   </section>
 
   <!-- <script src="script.js"></script> -->
