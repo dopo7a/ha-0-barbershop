@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Css/style.css">
 
-  <title>Барбершоп «Бородинский» - товар</title>
+  <title>Барбершоп «Бородинский» - продукт</title>
 </head>
 
 <body>
@@ -39,31 +39,41 @@
 
   <main>
     <h1>Набор для путешествий «Baxter of California»</h1>
+
     <nav class="breadcrumbs">
-      <!-- <h2 class="visually-hidden">Хлебные крошки - путь по эту страницу сайта</h2> -->
+      <h2 class="visually-hidden">Путь к текущему месту сайта</h2>
       <ul>
-        <li><a class="breadcrumbs-item" href="index.html">Главная</a></li>
-        <li><a class="breadcrumbs-item" href="shop.html">Магазин</a></li>
-        <li><a class="breadcrumbs-item" href="shop.html">Средства для ухода</a></li>
-        <li><a class="breadcrumbs-current">Набор для путешествий «Baxter of California»</a></li>
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="shop.html">Магазин</a>
+        </li>
+        <li>
+          <a href="shop.html#">Средства для ухода</a>
+        </li>
+        <li class="breadcrumbs_current">
+          <a>Набор для путешествий «Baxter of California»</a>
+        </li>
       </ul>
     </nav>
 
     <section class="product-images">
       <h2 class="visually-hidden">Изображения товара</h2>
-      <figure class="product-figure">
-        <figcaption class="visually-hidden">Изображение товара</figcaption>
-        <img class="product-image" src="Pic/product1-3.jpg" alt="Полное изображение 1" width="460" height="498">
-      </figure>
-      <ul class="product-thumbs-list">
-        <li class="product-thumbs-item">
-          <img class="product-thumb" src="Pic/product1-1_small.jpg" alt="Миниатюра1" width="140" height="149">
+
+      <p class="product-images-full">
+        <img class="product-image" src="Pic/product1-3.jpg" alt="Изображение 3 - полное" width="460" height="498">
+      </p>
+
+      <ul class="product-images-thumbs">
+        <li>
+          <img class="product-thumb" src="Pic/product1-1_small.jpg" alt="Изображение1 - миниатюра" width="140" height="149">
         </li>
-        <li class="product-thumbs-item">
-          <img class="product-thumb" src="Pic/product1-2_small.jpg" alt="Миниатюра2" width="140" height="149">
+        <li>
+          <img class="product-thumb" src="Pic/product1-2_small.jpg" alt="Изображение2 - миниатюра" width="140" height="149">
         </li>
-        <li class="product-thumbs-item">
-          <img class="product-thumb" src="Pic/product1-3_small.jpg" alt="Миниатюра3" width="140" height="149">
+        <li>
+          <img class="product-thumb" src="Pic/product1-3_small.jpg" alt="Изображение3 - миниатюра" width="140" height="149">
         </li>
       </ul>
     </section>
@@ -79,18 +89,17 @@
       </p>
       <p class="product-cost_buy">
         <b class="product-cost">2 900 ₽</b>
-        <button product-buy>Купить</button>
+        <button class="button">Купить</button>
       </p>
       <h3>В набор входят:</h3>
-      <ul class="product-suite_list">
-        <li class="product-suite_item">Средство для умывания (50 мл)</li>
-        <li class="product-suite_item">Увлажняющий крем (50 мл)</li>
-        <li class="product-suite_item">Крем для бритья (50 мл)</li>
-        <li class="product-suite_item">Крем после бритья, шампунь (50 мл)</li>
-        <li class="product-suite_item">Удобная кожаная косметичка</li>
+      <ul>
+        <li>Средство для умывания (50 мл)</li>
+        <li>Увлажняющий крем (50 мл)</li>
+        <li>Крем для бритья (50 мл)</li>
+        <li>Крем после бритья, шампунь (50 мл)</li>
+        <li>Удобная кожаная косметичка</li>
       </ul>
     </section>
-
   </main>
 
   <footer>
@@ -98,7 +107,7 @@
       <p>
         Барбершоп "Бородинский"<br>
         Адрес: г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
-        <a href="#modal-map">Как нас найти</a><br>
+        <a href="#modal-map">Как нас найти?</a><br>
         Телефон: +7 (495) 666-02-66
       </p>
     </div>
@@ -106,49 +115,47 @@
       <p>Давайте дружить!</p>
       <ul>
         <li>
-          <a class="button vkontakte" href="http://vk.com" target="_blank" rel="noopener noreferrer">Вконтакте</a>
+          <a class="button vkontakte" href="http://vk.com" target="_blank">Вконтакте</a>
         </li>
         <li>
-          <a class="button facebook" href="http://facebook.com" target="_blank" rel="noopener noreferrer">Фэйсбук</a>
+          <a class="button facebook" href="http://facebook.com" target="_blank">Фэйсбук</a>
         </li>
         <li>
-          <a class="button instagram" href="http://instagram.com" target="_blank" rel="noopener noreferrer">Инстаграм</a>
+          <a class="button instagram" href="http://instagram.com" target="_blank">Инстаграм</a>
         </li>
       </ul>
     </div>
     <div class="developer">
       <p>Разработано:</p>
-      <a class="button" href="http://htmlacademy.ru" target="_blank" rel="noopener noreferrer">HTML Academy</a>
+      <a class="button" href="http://htmlacademy.ru" target="_blank">HTML Academy</a>
     </div>
   </footer>
 
   <section id="modal-login">
     <h2>Личный кабинет</h2>
     <p>Введите пожалуйста свой логин и пароль</p>
-    <!-- форма для входа -->
-    <form action="" method="get">
+    <form action="https://echo.htmlacademy.ru" method="get">
       <p>
         <label class="visually-hidden" for="login">Логин</label>
-        <input type="text" name="login" id="login" placeholder="Логин">
+        <input class="login-icon" id="login" type="text" name="login" placeholder="Логин">
       </p>
       <p>
         <label class="visually-hidden" for="password">Пароль</label>
-        <input type="password" name="password" id="password" placeholder="Пароль">
+        <input class="password-icon" id="password" type="password" name="password" placeholder="Пароль">
       </p>
       <p>
-        <label for="">
-          <input class="visually-hidden" type="checkbox" name="remember" id="" checked>
+        <label>
+          <input class="visually-hidden" type="checkbox" name="remember" checked>
           <span class="checkbox-styled"></span>
           Запомните меня
         </label>
-        <a class="password-recovery" href="recovery.html">Я забыл пароль</a>
+        <a class="password-recovery" href="recovery.html">Я забыл пароль!</a>
       </p>
-      <input type="submit" value="Войти">
-      <!-- <button type="submit">Войти</button> -->
+      <button class="button" type="submit">Войти</button>
     </form>
 
     <!-- <span class="modal-close">[x]</span> -->
-    <input class="modal-close" type="button" value="Закрыть">
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 
   <section id="modal-map">
@@ -156,9 +163,10 @@
     <p>
       <img src="Pic/map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="766" height="560">
     </p>
-    <input class="modal-close" type="button" value="Закрыть">
+    <button class="modal-close" type="button">Закрыть</button>
     <!-- <span class="modal-close">[x]</span> -->
   </section>
+
   <!-- <script src="script.js"></script> -->
 </body>
 

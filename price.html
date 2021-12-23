@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Css/style.css">
 
-  <title>Барбершоп «Бородинский»</title>
+  <title>Барбершоп «Бородинский» - Прайс-лист</title>
 </head>
 
 <body>
@@ -41,12 +41,15 @@
 
   <main>
     <h1>Прайс-лист</h1>
+
     <nav class="breadcrumbs">
-      <!-- <h2 class="visually-hidden">Хлебные крошки - путь по эту страницу сайта</h2> -->
+      <h2 class="visually-hidden">Путь к текущему месту сайта</h2>
       <ul>
-        <li><a class="breadcrumbs-item" href="index.html">Главная</a></li>
-        <li class="breadcrumbs-current">
-          <a class="breadcrumbs-item">Прайс-лист</a>
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs_current">
+          <a>Прайс-лист</a>
         </li>
       </ul>
     </nav>
@@ -62,6 +65,7 @@
         <li>Malin+Goetz</li>
       </ul>
     </section>
+
     <section class="cost">
       <h2>Цены на услуги наших мастеров:</h2>
       <table>
@@ -79,6 +83,7 @@
         </tr>
       </table>
     </section>
+    
     <section class="about">
       <h2>Несколько слов о нас:</h2>
       <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
@@ -92,7 +97,7 @@
       <p>
         Барбершоп "Бородинский"<br>
         Адрес: г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
-        <a href="#modal-map">Как нас найти</a><br>
+        <a href="#modal-map">Как нас найти?</a><br>
         Телефон: +7 (495) 666-02-66
       </p>
     </div>
@@ -100,49 +105,47 @@
       <p>Давайте дружить!</p>
       <ul>
         <li>
-          <a class="button vkontakte" href="http://vk.com" target="_blank" rel="noopener noreferrer">Вконтакте</a>
+          <a class="button vkontakte" href="http://vk.com" target="_blank">Вконтакте</a>
         </li>
         <li>
-          <a class="button facebook" href="http://facebook.com" target="_blank" rel="noopener noreferrer">Фэйсбук</a>
+          <a class="button facebook" href="http://facebook.com" target="_blank">Фэйсбук</a>
         </li>
         <li>
-          <a class="button instagram" href="http://instagram.com" target="_blank" rel="noopener noreferrer">Инстаграм</a>
+          <a class="button instagram" href="http://instagram.com" target="_blank">Инстаграм</a>
         </li>
       </ul>
     </div>
     <div class="developer">
       <p>Разработано:</p>
-      <a class="button" href="http://htmlacademy.ru" target="_blank" rel="noopener noreferrer">HTML Academy</a>
+      <a class="button" href="http://htmlacademy.ru" target="_blank">HTML Academy</a>
     </div>
   </footer>
 
   <section id="modal-login">
     <h2>Личный кабинет</h2>
     <p>Введите пожалуйста свой логин и пароль</p>
-    <!-- форма для входа -->
-    <form action="" method="get">
+    <form action="https://echo.htmlacademy.ru" method="get">
       <p>
         <label class="visually-hidden" for="login">Логин</label>
-        <input type="text" name="login" id="login" placeholder="Логин">
+        <input class="login-icon" id="login" type="text" name="login" placeholder="Логин">
       </p>
       <p>
         <label class="visually-hidden" for="password">Пароль</label>
-        <input type="password" name="password" id="password" placeholder="Пароль">
+        <input class="password-icon" id="password" type="password" name="password" placeholder="Пароль">
       </p>
       <p>
-        <label for="">
-          <input class="visually-hidden" type="checkbox" name="remember" id="" checked>
+        <label>
+          <input class="visually-hidden" type="checkbox" name="remember" checked>
           <span class="checkbox-styled"></span>
           Запомните меня
         </label>
-        <a class="password-recovery" href="recovery.html">Я забыл пароль</a>
+        <a class="password-recovery" href="recovery.html">Я забыл пароль!</a>
       </p>
-      <input type="submit" value="Войти">
-      <!-- <button type="submit">Войти</button> -->
+      <button class="button" type="submit">Войти</button>
     </form>
 
     <!-- <span class="modal-close">[x]</span> -->
-    <input class="modal-close" type="button" value="Закрыть">
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 
   <section id="modal-map">
@@ -150,7 +153,7 @@
     <p>
       <img src="Pic/map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="766" height="560">
     </p>
-    <input class="modal-close" type="button" value="Закрыть">
+    <button class="modal-close" type="button">Закрыть</button>
     <!-- <span class="modal-close">[x]</span> -->
   </section>
 

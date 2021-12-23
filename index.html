@@ -36,13 +36,13 @@
   </header>
 
   <main>
-    <h1 class="visually-hidden">Главная страница</h1>
+    <h1 class="visually-hidden">Барбершоп "Бородинский" - главная страница</h1>
     <div class="main-logo">
       <img src="Img/index-logo.svg" alt='Главный логотип барбершопа "Бородинский"' width="369" height="153">
     </div>
 
     <section class="features">
-      <h2 class="visually-hidden">Фичи</h2>
+      <h2 class="visually-hidden">Наши качества</h2>
       <ul class="features-list">
         <li class="features-item">
           <h3>Быстро</h3>
@@ -77,12 +77,12 @@
     <section class="gallary">
       <h2>Фотогалерея</h2>
       <figure>
-        <figcaption class="visually-hidden">Миниатюра галереи</figcaption>
+        <figcaption class="visually-hidden">Миниатюра в галерее</figcaption>
         <a href="#modal-gallary-fig">
           <img src="Pic/fig-small.jpg" alt="Интерьер - миниатюра" width="328" height="164"></a>
       </figure>
-      <button>Назад</button>
-      <button>Вперёд</button>
+      <button class="button" type="button">Назад</button>
+      <button class="button" type="button">Вперёд</button>
     </section>
 
     <section class="contacts">
@@ -122,7 +122,7 @@
           <input id="app-tel" type="tel" name="app-tel" placeholder="+71234567890">
         </p>
         <!-- <button type="submit">Отправить</button> -->
-        <input type="submit" value="Отправить">
+        <button class="button" type="submit">Отправить</button>
       </form>
     </section>
   </main>
@@ -132,7 +132,7 @@
       <p>
         Барбершоп "Бородинский"<br>
         Адрес: г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
-        <a href="#modal-map">Как нас найти</a><br>
+        <a href="#modal-map">Как нас найти?</a><br>
         Телефон: +7 (495) 666-02-66
       </p>
     </div>
@@ -140,49 +140,47 @@
       <p>Давайте дружить!</p>
       <ul>
         <li>
-          <a class="button vkontakte" href="http://vk.com" target="_blank" rel="noopener noreferrer">Вконтакте</a>
+          <a class="button vkontakte" href="http://vk.com" target="_blank">Вконтакте</a>
         </li>
         <li>
-          <a class="button facebook" href="http://facebook.com" target="_blank" rel="noopener noreferrer">Фэйсбук</a>
+          <a class="button facebook" href="http://facebook.com" target="_blank">Фэйсбук</a>
         </li>
         <li>
-          <a class="button instagram" href="http://instagram.com" target="_blank" rel="noopener noreferrer">Инстаграм</a>
+          <a class="button instagram" href="http://instagram.com" target="_blank">Инстаграм</a>
         </li>
       </ul>
     </div>
     <div class="developer">
       <p>Разработано:</p>
-      <a class="button" href="http://htmlacademy.ru" target="_blank" rel="noopener noreferrer">HTML Academy</a>
+      <a class="button" href="http://htmlacademy.ru" target="_blank">HTML Academy</a>
     </div>
   </footer>
 
   <section id="modal-login">
     <h2>Личный кабинет</h2>
     <p>Введите пожалуйста свой логин и пароль</p>
-    <!-- форма для входа -->
-    <form action="" method="get">
+    <form action="https://echo.htmlacademy.ru" method="get">
       <p>
         <label class="visually-hidden" for="login">Логин</label>
-        <input type="text" name="login" id="login" placeholder="Логин">
+        <input class="login-icon" id="login" type="text" name="login" placeholder="Логин">
       </p>
       <p>
         <label class="visually-hidden" for="password">Пароль</label>
-        <input type="password" name="password" id="password" placeholder="Пароль">
+        <input class="password-icon" id="password" type="password" name="password" placeholder="Пароль">
       </p>
       <p>
-        <label for="">
-          <input class="visually-hidden" type="checkbox" name="remember" id="" checked>
+        <label>
+          <input class="visually-hidden" type="checkbox" name="remember" checked>
           <span class="checkbox-styled"></span>
           Запомните меня
         </label>
-        <a class="password-recovery" href="recovery.html">Я забыл пароль</a>
+        <a class="password-recovery" href="recovery.html">Я забыл пароль!</a>
       </p>
-      <input type="submit" value="Войти">
-      <!-- <button type="submit">Войти</button> -->
+      <button class="button" type="submit">Войти</button>
     </form>
 
     <!-- <span class="modal-close">[x]</span> -->
-    <input class="modal-close" type="button" value="Закрыть">
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 
   <section id="modal-map">
@@ -190,7 +188,7 @@
     <p>
       <img src="Pic/map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="766" height="560">
     </p>
-    <input class="modal-close" type="button" value="Закрыть">
+    <button class="modal-close" type="button">Закрыть</button>
     <!-- <span class="modal-close">[x]</span> -->
   </section>
 
@@ -200,7 +198,7 @@
       <figcaption>Полная картинка галереи</figcaption>
       <img src="Pic/fig.jpg" alt="Интерьер - полная картинка">
     </figure>
-    <input class="modal-close" type="button" value="Закрыть">    
+    <button class="modal-close" type="button">Закрыть</button>
     <!-- <span class="close">[x]</span> -->
   </section>
 

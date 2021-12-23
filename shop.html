@@ -42,166 +42,184 @@
     <h1 class="radio-choiced">Средства для ухода</h1>
 
     <nav class="breadcrumbs">
-      <!-- <h2 class="visually-hidden">Хлебные крошки - путь по эту страницу сайта</h2> -->
+      <h2 class="visually-hidden">Путь к текущему месту сайта</h2>
       <ul>
-        <li><a class="breadcrumbs-item" href="index.html">Главная</a></li>
-        <li><a class="breadcrumbs-item" href="shop.html">Магазин</a></li>
-        <li><a class="breadcrumbs-current">Средства для ухода</a></li>
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="shop.html">Магазин</a>
+        </li>
+        <li class="breadcrumbs_current">
+          <a>Средства для ухода</a>
+        </li>
       </ul>
     </nav>
 
-    <section class="goods-filters">
+    <section class="filters">
       <h2 class="visually-hidden">Фильтры выбора товаров</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
-        <section class="filter_vendors">
-          <h3>Производители:</h3>
+        <fieldset>
+          <legend>Производители:</legend>
           <ul>
             <li>
-              <label >
-                <input name="Baxter of California" class="visually-hidden" type="checkbox" checked>
+              <label>
+                <input name="Baxter-of-California" class="visually-hidden" type="checkbox" checked>
                 Baxter of California
               </label>
             </li>
             <li>
-              <label >
-                <input name="Mr Natty" class="visually-hidden" type="checkbox">
+              <label>
+                <input name="Mr-Natty" class="visually-hidden" type="checkbox">
                 Mr Natty
               </label>
             </li>
             <li>
-              <label >
+              <label>
                 <input name="Suavecito" class="visually-hidden" type="checkbox" checked>
                 Suavecito
               </label>
             </li>
             <li>
-              <label >
+              <label>
                 <input name="Malin+Goetz" class="visually-hidden" type="checkbox">
                 Malin+Goetz
               </label>
             </li>
             <li>
-              <label >
+              <label>
                 <input type="checkbox">
                 Murray’s
               </label>
             </li>
             <li>
-              <label >
-                <input name="American Crew" class="visually-hidden" type="checkbox" checked>
+              <label>
+                <input name="American-Crew" class="visually-hidden" type="checkbox" checked>
                 American Crew
               </label>
             </li>
           </ul>
-        </section>
+        </fieldset>
 
-        <section class="filter_goods-groups">
-          <h3>Группы товаров:</h3>
+        <fieldset>
+          <legend>Группы товаров:</legend>
           <ul>
             <li>
-              <label >
-                <input type="radio" name="goods-group" value="shave">
+              <label>
+                <input class="visually-hidden" type="radio" name="products-group" value="shave">
                 Бритвенные принадлежности
               </label>
             </li>
             <li>
-              <label >
-                <input type="radio" name="goods-group" value="care" checked>
+              <label>
+                <input class="visually-hidden" type="radio" name="products-group" value="care" checked>
                 Средства для ухода
               </label>
             </li>
             <li>
-              <label >
-                <input type="radio" name="goods-group" value="accessories">
+              <label>
+                <input class="visually-hidden" type="radio" name="products-group" value="accessories">
                 Аксессуары
               </label>
             </li>
           </ul>
-        </section>
+        </fieldset>
 
-        <input type="submit" value="Показать">
+        <button class="button" type="submit">Показать</button>
       </form>
     </section>
 
-    <section class="goods-showcase">
+    <section class="products">
       <h2 class="visually-hidden">Список отфильтрованных товаров</h2>
-      <ul class="goods-list">
-        <li class="goods-item product">
-          <a href="item.html">
-            <img class="product-image" src="Pic/product1.jpg" alt="Набор для путешествий «Baxter of California»" width="220" height="165">
-            <p class="product-title">
+      <ul class="products-list">
+        <li class="products-item">
+          <a href="product.html">
+            <h3 class="product-title">
               <span class="product-name">Набор для путешествий</span>
               <span class="poduct-vendor"> «Baxter of California»</span>
+            </h3>
+            <p class="products-item-image">
+              <img src="Pic/product1.jpg" alt="Набор для путешествий «Baxter of California»" width="220" height="165">
             </p>
           </a>
           <p class="product-cost_buy">
             <b class="product-cost">2 900 ₽</b>
-            <button product-buy>Купить</button>
+            <button class="button">Купить</button>
           </p>
         </li>
-        <li class="goods-item product">
-          <a href="item.html">
-            <img class="product-image" src="Pic/product2.jpg" alt="Увлажняющий кондиционер «Baxter of California»" width="220" height="165">
-            <p class="product-title">
+        <li class="products-item">
+          <a href="product.html">
+            <h3 class="product-title">
               <span class="product-name">Увлажняющий кондиционер</span>
               <span class="poduct-vendor">«Baxter of California»</span>
+            </h3>
+            <p class="products-item-image">
+              <img src="Pic/product2.jpg" alt="Увлажняющий кондиционер «Baxter of California»" width="220" height="165">
             </p>
           </a>
           <p class="product-cost_buy">
             <b class="product-cost">750 ₽</b>
-            <button product-buy>Купить</button>
+            <button class="button">Купить</button>
           </p>
         </li>
-        <li class="goods-item product">
-          <a href="item.html">
-            <img class="product-image" src="Pic/product3.jpg" alt="Гель для волос «SUAVECITO»" width="220" height="165">
-            <p class="product-title">
+        <li class="products-item">
+          <a href="product.html">
+            <h3 class="product-title">
               <span class="product-name">Гель для волос</span>
               <span class="poduct-vendor">«SUAVECITO»</span>
+            </h3>
+            <p class="products-item-image">
+              <img src="Pic/product3.jpg" alt="Гель для волос «SUAVECITO»" width="220" height="165">
             </p>
           </a>
           <p class="product-cost_buy">
             <b class="product-cost">290 ₽</b>
-            <button product-buy>Купить</button>
+            <button class="button">Купить</button>
           </p>
         </li>
-        <li class="goods-item product">
-          <a href="item.html">
-            <img class="product-image" src="Pic/product4.jpg" alt="Глина для укладки волос «American crew»" width="220" height="165">
-            <p class="product-title">
+        <li class="products-item">
+          <a href="product.html">
+            <h3 class="product-title">
               <span class="product-name">Глина для укладки волос</span>
               <span class="poduct-vendor">«American crew»</span>
+            </h3>
+            <p class="products-item-image">
+              <img src="Pic/product4.jpg" alt="Глина для укладки волос «American crew»" width="220" height="165">
             </p>
           </a>
           <p class="product-cost_buy">
             <b class="product-cost">500 ₽</b>
-            <button product-buy>Купить</button>
+            <button class="button">Купить</button>
           </p>
         </li>
-        <li class="goods-item product">
-          <a href="item.html">
-            <img class="product-image" src="Pic/product5.jpg" alt="Гель для волос «AMERICAN CREW»" width="220" height="165">
-            <p class="product-title">
+        <li class="products-item">
+          <a href="product.html">
+            <h3 class="product-title">
               <span class="product-name">Гель для волос</span>
               <span class="poduct-vendor">«AMERICAN CREW»</span>
+            </h3>
+            <p class="products-item-image">
+              <img src="Pic/product5.jpg" alt="Гель для волос «AMERICAN CREW»" width="220" height="165">
             </p>
           </a>
           <p class="product-cost_buy">
             <b class="product-cost">300 ₽</b>
-            <button product-buy>Купить</button>
+            <button class="button">Купить</button>
           </p>
         </li>
-        <li class="goods-item product">
-          <a href="item.html">
-            <img class="product-image" src="Pic/product6.jpg" alt="Набор для бритья «Baxter of California»" width="220" height="165">
-            <p class="product-title">
+        <li class="products-item">
+          <a href="product.html">
+            <h3 class="product-title">
               <span class="product-name">Набор для бритья</span>
               <span class="poduct-vendor">«Baxter of California»</span>
+            </h3>
+            <p class="products-item-image">
+              <img src="Pic/product6.jpg" alt="Набор для бритья «Baxter of California»" width="220" height="165">
             </p>
           </a>
           <p class="product-cost_buy">
             <b class="product-cost">3 900 ₽</b>
-            <button product-buy>Купить</button>
+            <button class="button">Купить</button>
           </p>
         </li>
       </ul>
@@ -220,7 +238,7 @@
       <p>
         Барбершоп "Бородинский"<br>
         Адрес: г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
-        <a href="#modal-map">Как нас найти</a><br>
+        <a href="#modal-map">Как нас найти?</a><br>
         Телефон: +7 (495) 666-02-66
       </p>
     </div>
@@ -228,49 +246,47 @@
       <p>Давайте дружить!</p>
       <ul>
         <li>
-          <a class="button vkontakte" href="http://vk.com" target="_blank" rel="noopener noreferrer">Вконтакте</a>
+          <a class="button vkontakte" href="http://vk.com" target="_blank">Вконтакте</a>
         </li>
         <li>
-          <a class="button facebook" href="http://facebook.com" target="_blank" rel="noopener noreferrer">Фэйсбук</a>
+          <a class="button facebook" href="http://facebook.com" target="_blank">Фэйсбук</a>
         </li>
         <li>
-          <a class="button instagram" href="http://instagram.com" target="_blank" rel="noopener noreferrer">Инстаграм</a>
+          <a class="button instagram" href="http://instagram.com" target="_blank">Инстаграм</a>
         </li>
       </ul>
     </div>
     <div class="developer">
       <p>Разработано:</p>
-      <a class="button" href="http://htmlacademy.ru" target="_blank" rel="noopener noreferrer">HTML Academy</a>
+      <a class="button" href="http://htmlacademy.ru" target="_blank">HTML Academy</a>
     </div>
   </footer>
 
   <section id="modal-login">
     <h2>Личный кабинет</h2>
     <p>Введите пожалуйста свой логин и пароль</p>
-    <!-- форма для входа -->
-    <form action="" method="get">
+    <form action="https://echo.htmlacademy.ru" method="get">
       <p>
         <label class="visually-hidden" for="login">Логин</label>
-        <input type="text" name="login" id="login" placeholder="Логин">
+        <input class="login-icon" id="login" type="text" name="login" placeholder="Логин">
       </p>
       <p>
         <label class="visually-hidden" for="password">Пароль</label>
-        <input type="password" name="password" id="password" placeholder="Пароль">
+        <input class="password-icon" id="password" type="password" name="password" placeholder="Пароль">
       </p>
       <p>
-        <label for="">
-          <input class="visually-hidden" type="checkbox" name="remember" id="" checked>
+        <label>
+          <input class="visually-hidden" type="checkbox" name="remember" checked>
           <span class="checkbox-styled"></span>
           Запомните меня
         </label>
-        <a class="password-recovery" href="recovery.html">Я забыл пароль</a>
+        <a class="password-recovery" href="recovery.html">Я забыл пароль!</a>
       </p>
-      <input type="submit" value="Войти">
-      <!-- <button type="submit">Войти</button> -->
+      <button class="button" type="submit">Войти</button>
     </form>
 
     <!-- <span class="modal-close">[x]</span> -->
-    <input class="modal-close" type="button" value="Закрыть">
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 
   <section id="modal-map">
@@ -278,7 +294,7 @@
     <p>
       <img src="Pic/map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="766" height="560">
     </p>
-    <input class="modal-close" type="button" value="Закрыть">
+    <button class="modal-close" type="button">Закрыть</button>
     <!-- <span class="modal-close">[x]</span> -->
   </section>
 
