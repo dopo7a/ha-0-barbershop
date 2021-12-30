@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 
-<html lang="ru-ru">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Css/normalize.css">
   <link rel="stylesheet" href="Css/style.css">
 
   <title>Барбершоп «Бородинский» - Прайс-лист</title>
 </head>
 
-<body>
-  <header class="body-header">
-    <nav class="body-header__nav">
+<body class="price-page">
+  <header class="site-header">
+    <nav class="site-nav">
       <ul class="site-menu">
-        <li class="site-menu__logo">
+        <li class="site-menu-logo">
           <a href="index.html">
             <img src="Img/logo.svg" alt="Малый логотип Бородинского" width="111" height="24">
           </a>
         </li>
         <li><a href="info.html">Информация</a></li>
         <li><a href="news.html">Новости</a></li>
-        <li class="site-menu__current">
+        <li class="site-menu-cur">
           <a>Прайс-лист</a>
         </li>
         <li>
           <a href="shop.html">Магазин</a>
         </li>
         <li><a href="contacts.html">Контакты</a></li>
-        <li class="site-menu__login">
+        <li class="site-menu-login">
           <a class="login-link" href="#modal-login">Вход</a>
           <ul class="user-menu" hidden>
             <li>Настройки</li>
@@ -39,8 +41,8 @@
     </nav>
   </header>
 
-  <main>
-    <h1>Прайс-лист</h1>
+  <main class="inner-page">
+    <h1 class="page-title">Прайс-лист</h1>
 
     <nav class="breadcrumbs">
       <h2 class="visually-hidden">Путь к текущему месту сайта</h2>
@@ -48,51 +50,57 @@
         <li>
           <a href="index.html">Главная</a>
         </li>
-        <li class="breadcrumbs_current">
+        <li class="breadcrumbs-cur">
           <a>Прайс-лист</a>
         </li>
       </ul>
     </nav>
 
-    <p class="price-slogan">- Истинно мужская классика -</p>
+    <p class="price-title">- Истинно мужская классика -</p>
 
-    <section class="means">
-      <h2>Мы используем только лучшие средства:</h2>
-      <ul>
-        <li>Baxter of California</li>
-        <li>Mr Natty</li>
-        <li>Suavecito</li>
-        <li>Malin+Goetz</li>
-      </ul>
-    </section>
+    <div class="price-row">
+      <section class="price-means price-col">
+        <h2>Мы используем только лучшие средства:</h2>
+        <ul>
+          <li>Baxter of California</li>
+          <li>Mr Natty</li>
+          <li>Suavecito</li>
+          <li>Malin+Goetz</li>
+        </ul>
+      </section>
 
-    <section class="cost">
-      <h2>Цены на услуги наших мастеров:</h2>
-      <table>
-        <tr>
-          <th>Стрижка</th>
-          <td>1500 ₽</td>
-        </tr>
-        <tr>
-          <th>Стрижка бороды</th>
-          <td>500 ₽</td>
-        </tr>
-        <tr>
-          <th>Накрутка усов</th>
-          <td>350 ₽</td>
-        </tr>
-      </table>
-    </section>
-    
-    <section class="about">
-      <h2>Несколько слов о нас:</h2>
-      <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
-      <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+      <section class="price-cost price-col">
+        <h2>Цены на услуги наших мастеров:</h2>
+        <table class="price-table">
+          <tr>
+            <th>Стрижка</th>
+            <td>1500 ₽</td>
+          </tr>
+          <tr>
+            <th>Стрижка бороды</th>
+            <td>500 ₽</td>
+          </tr>
+          <tr>
+            <th>Накрутка усов</th>
+            <td>350 ₽</td>
+          </tr>
+        </table>
+      </section>
+    </div>
+
+    <section class="price-about price-row">
+      <div class="price-col">
+        <h2>Несколько слов о нас:</h2>
+        <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+      </div>
+      <div class="price-col">
+        <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+      </div>
     </section>
 
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="footer-contacts">
       <p>
         Барбершоп "Бородинский"<br>
@@ -101,6 +109,7 @@
         Телефон: +7 (495) 666-02-66
       </p>
     </div>
+
     <div class="footer-socials">
       <p>Давайте дружить!</p>
       <ul>
@@ -115,16 +124,17 @@
         </li>
       </ul>
     </div>
-    <div class="developer">
-      <p>Разработано:</p>
+
+    <div class="footer-developer">
+      <b>Разработано:</b>
       <a class="button" href="http://htmlacademy.ru" target="_blank">HTML Academy</a>
     </div>
   </footer>
 
-  <section id="modal-login">
-    <h2>Личный кабинет</h2>
+  <section class="modal-login" id="modal-login">
+    <h2 class="modal-title">Личный кабинет</h2>
     <p>Введите пожалуйста свой логин и пароль</p>
-    <form action="https://echo.htmlacademy.ru" method="get">
+    <form action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label class="visually-hidden" for="login">Логин</label>
         <input class="login-icon" id="login" type="text" name="login" placeholder="Логин">
@@ -133,13 +143,13 @@
         <label class="visually-hidden" for="password">Пароль</label>
         <input class="password-icon" id="password" type="password" name="password" placeholder="Пароль">
       </p>
-      <p>
-        <label>
+      <p class="login-password-options">
+        <label class="password-remember">
           <input class="visually-hidden" type="checkbox" name="remember" checked>
-          <span class="checkbox-styled"></span>
-          Запомните меня
+          <span class="checkbox-styled">|X|</span>
+          <span>Запомните меня</span>
         </label>
-        <a class="password-recovery" href="recovery.html">Я забыл пароль!</a>
+        <a class="password-recovery" href="#">Я забыл пароль!</a>
       </p>
       <button class="button" type="submit">Войти</button>
     </form>
@@ -148,7 +158,7 @@
     <button class="modal-close" type="button">Закрыть</button>
   </section>
 
-  <section id="modal-map">
+  <section class="modal-map" id="modal-map">
     <h2 class="visually-hidden">Как нас найти</h2>
     <p>
       <img src="Pic/map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="766" height="560">

@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 
-<html lang="ru-ru">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Css/normalize.css">
   <link rel="stylesheet" href="Css/style.css">
 
   <title>Барбершоп «Бородинский» - главная страница</title>
 </head>
 
 <body>
-  <header class="body-header">
-    <nav class="body-header__nav">
+  <header class="site-header">
+    <nav class="site-nav">
       <ul class="site-menu">
-        <li class="site-menu__logo site-menu__current" hidden>
+        <li class="site-menu-logo site-menu-cur" hidden>
           <a>
             <img src="Img/logo.svg" alt="Малый логотип Бородинского" width="111" height="24">
           </a>
@@ -24,7 +29,7 @@
         <li><a href="price.html">Прайс-лист</a></li>
         <li><a href="shop.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
-        <li class="site-menu__login">
+        <li class="site-menu-login">
           <a class="login-link" href="#modal-login">Вход</a>
           <ul class="user-menu" hidden>
             <li>Настройки</li>
@@ -37,7 +42,7 @@
 
   <main>
     <h1 class="visually-hidden">Барбершоп "Бородинский" - главная страница</h1>
-    <div class="main-logo">
+    <div class="index-logo">
       <img src="Img/index-logo.svg" alt='Главный логотип барбершопа "Бородинский"' width="369" height="153">
     </div>
 
@@ -59,75 +64,79 @@
       </ul>
     </section>
 
-    <section class="news">
-      <h2>Новости</h2>
-      <ul class="news-list">
-        <li class="news-item">
-          <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-          <time datetime="01-11">11 Января</time>
-        </li>
-        <li class="news-item">
-          <p>В нашей_команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
-          <time datetime="01-18">18 Января</time>
-        </li>
-      </ul>
-      <a href="news.html" class="button">Все новости</a>
-    </section>
+    <div class="index-group">
+      <section class="news">
+        <h2>Новости</h2>
+        <ul class="news-list">
+          <li class="news-item">
+            <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+            <time datetime="01-11">11 Января</time>
+          </li>
+          <li class="news-item">
+            <p>В нашей_команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+            <time datetime="01-18">18 Января</time>
+          </li>
+        </ul>
+        <a href="news.html" class="button">Все новости</a>
+      </section>
 
-    <section class="gallary">
-      <h2>Фотогалерея</h2>
-      <figure>
-        <figcaption class="visually-hidden">Миниатюра в галерее</figcaption>
-        <a href="#modal-gallary-fig">
-          <img src="Pic/fig-small.jpg" alt="Интерьер - миниатюра" width="328" height="164"></a>
-      </figure>
-      <button class="button" type="button">Назад</button>
-      <button class="button" type="button">Вперёд</button>
-    </section>
+      <section class="gallery">
+        <h2>Фотогалерея</h2>
+        <figure class="gallery-content">
+          <!-- <figcaption class="visually-hidden">Миниатюра в галерее</figcaption> -->
+          <a href="#">
+            <img src="Pic/fig-small.jpg" alt="Интерьер - миниатюра" width="328" height="164"></a>
+        </figure>
+        <button class="button" type="button">Назад</button>
+        <button class="button" type="button">Вперёд</button>
+      </section>
+    </div>
 
-    <section class="contacts">
-      <h2>Контактная информация</h2>
-      <p>
-        Барбершоп «Бородинский»<br>
-        Адрес: г.Санкт-Петербург, Б.Конюшенная, Д.19/8<br>
-        Телефон: +7 (495) 666-02-66
-      </p>
-      <p>
-        Время работы: <br>
-        Пн-Пт: с 10:00 до 22:00 <br>
-        Сб-Вс: с 10:00 до 19:00
-      </p>
-      <a class="button" href="#modal-map">Как проехать</a>
-      <a class="button" href="feedback.html">Обратная связь</a>
-    </section>
+    <div class="index-group">
+      <section class="contacts">
+        <h2>Контактная информация</h2>
+        <p>
+          Барбершоп «Бородинский»<br>
+          Адрес: г.Санкт-Петербург, Б.Конюшенная, Д.19/8<br>
+          Телефон: +7 (495) 666-02-66
+        </p>
+        <p>
+          Время работы: <br>
+          Пн-Пт: с 10:00 до 22:00 <br>
+          Сб-Вс: с 10:00 до 19:00
+        </p>
+        <a class="button" href="#modal-map">Как проехать</a>
+        <a class="button" href="feedback.html">Обратная связь</a>
+      </section>
 
-    <section class="appointment">
-      <h2>Записаться</h2>
-      <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-      <form method="post" action="http://echo.htmlacademy.ru">
-        <p>
-          <label for="app-date">Дата</label>
-          <input id="app-date" type="date" name="app-date">
-        </p>
-        <p>
-          <label for="app-time">Время</label>
-          <input id="app-time" type="text" name="app-time" placeholder="10:00" pattern="[0-2][0-9]:[0-5][0-9] *">
-        </p>
-        <p>
-          <label for="app-name">Ваше имя</label>
-          <input id="app-name" type="text" name="app-name" placeholder="Имя">
-        </p>
-        <p>
-          <label for="app-tel">Телефон</label>
-          <input id="app-tel" type="tel" name="app-tel" placeholder="+71234567890">
-        </p>
-        <!-- <button type="submit">Отправить</button> -->
-        <button class="button" type="submit">Отправить</button>
-      </form>
-    </section>
+      <section class="appointment">
+        <h2>Записаться</h2>
+        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+        <form method="post" action="http://echo.htmlacademy.ru">
+          <p>
+            <label for="app-date">Дата</label>
+            <input id="app-date" type="date" name="app-date">
+          </p>
+          <p>
+            <label for="app-time">Время</label>
+            <input id="app-time" type="text" name="app-time" placeholder="10:00" pattern="[0-2][0-9]:[0-5][0-9] *">
+          </p>
+          <p>
+            <label for="app-name">Ваше имя</label>
+            <input id="app-name" type="text" name="app-name" placeholder="Имя">
+          </p>
+          <p>
+            <label for="app-tel">Телефон</label>
+            <input id="app-tel" type="tel" name="app-tel" placeholder="+71234567890">
+          </p>
+          <!-- <button type="submit">Отправить</button> -->
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="footer-contacts">
       <p>
         Барбершоп "Бородинский"<br>
@@ -136,6 +145,7 @@
         Телефон: +7 (495) 666-02-66
       </p>
     </div>
+
     <div class="footer-socials">
       <p>Давайте дружить!</p>
       <ul>
@@ -150,16 +160,17 @@
         </li>
       </ul>
     </div>
-    <div class="developer">
-      <p>Разработано:</p>
+
+    <div class="footer-developer">
+      <b>Разработано:</b>
       <a class="button" href="http://htmlacademy.ru" target="_blank">HTML Academy</a>
     </div>
   </footer>
 
-  <section id="modal-login">
-    <h2>Личный кабинет</h2>
+  <section class="modal-login" id="modal-login">
+    <h2 class="modal-title">Личный кабинет</h2>
     <p>Введите пожалуйста свой логин и пароль</p>
-    <form action="https://echo.htmlacademy.ru" method="get">
+    <form action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label class="visually-hidden" for="login">Логин</label>
         <input class="login-icon" id="login" type="text" name="login" placeholder="Логин">
@@ -168,13 +179,13 @@
         <label class="visually-hidden" for="password">Пароль</label>
         <input class="password-icon" id="password" type="password" name="password" placeholder="Пароль">
       </p>
-      <p>
-        <label>
+      <p class="login-password-options">
+        <label class="password-remember">
           <input class="visually-hidden" type="checkbox" name="remember" checked>
-          <span class="checkbox-styled"></span>
-          Запомните меня
+          <span class="checkbox-styled">|X|</span>
+          <span>Запомните меня</span>
         </label>
-        <a class="password-recovery" href="recovery.html">Я забыл пароль!</a>
+        <a class="password-recovery" href="#">Я забыл пароль!</a>
       </p>
       <button class="button" type="submit">Войти</button>
     </form>
@@ -183,7 +194,7 @@
     <button class="modal-close" type="button">Закрыть</button>
   </section>
 
-  <section id="modal-map">
+  <section class="modal-map" id="modal-map">
     <h2 class="visually-hidden">Как нас найти</h2>
     <p>
       <img src="Pic/map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="766" height="560">
@@ -192,16 +203,15 @@
     <!-- <span class="modal-close">[x]</span> -->
   </section>
 
-  <section id="modal-gallary-fig">
+  <!-- <section id="modal-gallary-fig">
     <h2 class="visually-hidden">Галерея - модальное окно</h2>
     <figure>
       <figcaption>Полная картинка галереи</figcaption>
       <img src="Pic/fig.jpg" alt="Интерьер - полная картинка">
     </figure>
     <button class="modal-close" type="button">Закрыть</button>
-    <!-- <span class="close">[x]</span> -->
   </section>
-
+ -->
   <!-- <script src="script.js"></script> -->
 </body>
 

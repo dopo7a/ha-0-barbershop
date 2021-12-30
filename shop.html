@@ -5,16 +5,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Css/normalize.css">
   <link rel="stylesheet" href="Css/style.css">
 
-  <title>Барбершоп «Бородинский» - магазин</title>
+  <title>Барбершоп «Бородинский» - Магазин</title>
 </head>
 
-<body>
-  <header class="body-header">
-    <nav class="body-header__nav">
+<body class="inner-page shop-page">
+  <header class="site-header">
+    <nav class="site-nav">
       <ul class="site-menu">
-        <li class="site-menu__logo">
+        <li class="site-menu-logo">
           <a href="index.html">
             <img src="Img/logo.svg" alt="Малый логотип Бородинского" width="111" height="24">
           </a>
@@ -22,11 +25,11 @@
         <li><a href="info.html">Информация</a></li>
         <li><a href="news.html">Новости</a></li>
         <li><a href="price.html">Прайс-лист</a></li>
-        <li class="site-menu__current">
+        <li class="site-menu-cur">
           <a>Магазин</a>
         </li>
         <li><a href="contacts.html">Контакты</a></li>
-        <li class="site-menu__login">
+        <li class="site-menu-login">
           <a class="login-link" href="#modal-login">Вход</a>
           <ul class="user-menu" hidden>
             <li>Настройки</li>
@@ -39,7 +42,7 @@
 
   <main>
     <h1 class="visually-hidden">Магазин</h1>
-    <h1 class="radio-choiced">Средства для ухода</h1>
+    <h1 class="page-title">Средства для ухода</h1>
 
     <nav class="breadcrumbs">
       <h2 class="visually-hidden">Путь к текущему месту сайта</h2>
@@ -50,7 +53,7 @@
         <li>
           <a href="shop.html">Магазин</a>
         </li>
-        <li class="breadcrumbs_current">
+        <li class="breadcrumbs-cur">
           <a>Средства для ухода</a>
         </li>
       </ul>
@@ -60,66 +63,66 @@
       <h2 class="visually-hidden">Фильтры выбора товаров</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
-          <legend>Производители:</legend>
-          <ul>
+          <legend class="filter-title">Производители:</legend>
+          <ul class="vendor-list">
             <li>
               <label>
-                <input name="Baxter-of-California" class="visually-hidden" type="checkbox" checked>
-                Baxter of California
+                <input name="baxter-of-california" class="visually-hidden" type="checkbox" checked>
+                <span>Baxter of California</span>
               </label>
             </li>
             <li>
               <label>
-                <input name="Mr-Natty" class="visually-hidden" type="checkbox">
-                Mr Natty
+                <input name="mr-natty" class="visually-hidden" type="checkbox">
+                <span>Mr Natty</span>
               </label>
             </li>
             <li>
               <label>
-                <input name="Suavecito" class="visually-hidden" type="checkbox" checked>
-                Suavecito
+                <input name="suavecito" class="visually-hidden" type="checkbox" checked>
+                <span>Suavecito</span>
               </label>
             </li>
             <li>
               <label>
-                <input name="Malin+Goetz" class="visually-hidden" type="checkbox">
-                Malin+Goetz
+                <input name="malin-goetz" class="visually-hidden" type="checkbox">
+                <span>Malin+Goetz</span>
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox">
-                Murray’s
+                <input name="murrays" class="visually-hidden" type="checkbox">
+                <span>Murray’s</span>
               </label>
             </li>
             <li>
               <label>
-                <input name="American-Crew" class="visually-hidden" type="checkbox" checked>
-                American Crew
+                <input name="american-crew" class="visually-hidden" type="checkbox" checked>
+                <span>American Crew</span>
               </label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset>
-          <legend>Группы товаров:</legend>
+          <legend class="filter-title">Группы товаров:</legend>
           <ul>
             <li>
               <label>
                 <input class="visually-hidden" type="radio" name="products-group" value="shave">
-                Бритвенные принадлежности
+                <span>Бритвенные принадлежности</span>
               </label>
             </li>
             <li>
               <label>
                 <input class="visually-hidden" type="radio" name="products-group" value="care" checked>
-                Средства для ухода
+                <span>Средства для ухода</span>
               </label>
             </li>
             <li>
               <label>
                 <input class="visually-hidden" type="radio" name="products-group" value="accessories">
-                Аксессуары
+                <span>Аксессуары</span>
               </label>
             </li>
           </ul>
@@ -144,7 +147,7 @@
           </a>
           <p class="product-cost_buy">
             <b class="product-cost">2 900 ₽</b>
-            <button class="button">Купить</button>
+            <a class="button" href="#">Купить</a>
           </p>
         </li>
         <li class="products-item">
@@ -159,7 +162,7 @@
           </a>
           <p class="product-cost_buy">
             <b class="product-cost">750 ₽</b>
-            <button class="button">Купить</button>
+            <a class="button" href="#">Купить</a>
           </p>
         </li>
         <li class="products-item">
@@ -174,7 +177,7 @@
           </a>
           <p class="product-cost_buy">
             <b class="product-cost">290 ₽</b>
-            <button class="button">Купить</button>
+            <a class="button" href="#">Купить</a>
           </p>
         </li>
         <li class="products-item">
@@ -189,7 +192,7 @@
           </a>
           <p class="product-cost_buy">
             <b class="product-cost">500 ₽</b>
-            <button class="button">Купить</button>
+            <a class="button" href="#">Купить</a>
           </p>
         </li>
         <li class="products-item">
@@ -204,7 +207,7 @@
           </a>
           <p class="product-cost_buy">
             <b class="product-cost">300 ₽</b>
-            <button class="button">Купить</button>
+            <a class="button" href="#">Купить</a>
           </p>
         </li>
         <li class="products-item">
@@ -219,21 +222,21 @@
           </a>
           <p class="product-cost_buy">
             <b class="product-cost">3 900 ₽</b>
-            <button class="button">Купить</button>
+            <a class="button" href="#">Купить</a>
           </p>
         </li>
       </ul>
 
       <ul class="pagination">
-        <li><a href="#">1</a></li>
-        <li class="pagination-current"><a>2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
+        <li><a class="button" href="#">1</a></li>
+        <li class="pagination-cur"><a class="button">2</a></li>
+        <li><a class="button" href="#">3</a></li>
+        <li><a class="button" href="#">4</a></li>
       </ul>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="footer-contacts">
       <p>
         Барбершоп "Бородинский"<br>
@@ -242,6 +245,7 @@
         Телефон: +7 (495) 666-02-66
       </p>
     </div>
+
     <div class="footer-socials">
       <p>Давайте дружить!</p>
       <ul>
@@ -256,16 +260,17 @@
         </li>
       </ul>
     </div>
-    <div class="developer">
-      <p>Разработано:</p>
+
+    <div class="footer-developer">
+      <b>Разработано:</b>
       <a class="button" href="http://htmlacademy.ru" target="_blank">HTML Academy</a>
     </div>
   </footer>
 
-  <section id="modal-login">
-    <h2>Личный кабинет</h2>
+  <section class="modal-login" id="modal-login">
+    <h2 class="modal-title">Личный кабинет</h2>
     <p>Введите пожалуйста свой логин и пароль</p>
-    <form action="https://echo.htmlacademy.ru" method="get">
+    <form action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label class="visually-hidden" for="login">Логин</label>
         <input class="login-icon" id="login" type="text" name="login" placeholder="Логин">
@@ -274,13 +279,13 @@
         <label class="visually-hidden" for="password">Пароль</label>
         <input class="password-icon" id="password" type="password" name="password" placeholder="Пароль">
       </p>
-      <p>
-        <label>
+      <p class="login-password-options">
+        <label class="password-remember">
           <input class="visually-hidden" type="checkbox" name="remember" checked>
-          <span class="checkbox-styled"></span>
-          Запомните меня
+          <span class="checkbox-styled">|X|</span>
+          <span>Запомните меня</span>
         </label>
-        <a class="password-recovery" href="recovery.html">Я забыл пароль!</a>
+        <a class="password-recovery" href="#">Я забыл пароль!</a>
       </p>
       <button class="button" type="submit">Войти</button>
     </form>
@@ -289,7 +294,7 @@
     <button class="modal-close" type="button">Закрыть</button>
   </section>
 
-  <section id="modal-map">
+  <section class="modal-map" id="modal-map">
     <h2 class="visually-hidden">Как нас найти</h2>
     <p>
       <img src="Pic/map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="766" height="560">
